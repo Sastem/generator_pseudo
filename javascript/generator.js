@@ -1,5 +1,5 @@
 let pseudo = {
-    words : {
+    words: {
         pseudo_adjectif: [
             "Mystérieux",
             "Admirable",
@@ -18,22 +18,22 @@ let pseudo = {
             "Piano"
         ]
     },
-    afficherSurPage: function (chaine) {
+    afficherSurPage: function(chaine) {
         let resultat = document.getElementById("pseudo");
-        resultat.innerHTML = "<h1 class=\"fw-light\"> Voici votre pseudo : " + chaine + " </h1>";
+        resultat.innerHTML = "<h2 class=\"fw-light\"> Voici votre pseudo : " + chaine + " </h2>";
         resultat.value = "";
     },
     generate: function() {
         let pseudoGenerated = "";
-        pseudoGenerated += this.words.pseudo_nom[Math.floor((Math.random()*this.words.pseudo_nom
+        pseudoGenerated += this.words.pseudo_nom[Math.floor((Math.random() * this.words.pseudo_nom
             .length))];
-        pseudoGenerated+=this.words.pseudo_adjectif[Math.floor((Math.random()*
+        pseudoGenerated += this.words.pseudo_adjectif[Math.floor((Math.random() *
             this.words.pseudo_adjectif.length))];
-            console.log(pseudoGenerated);
+        console.log(pseudoGenerated);
         pseudo.afficherSurPage(pseudoGenerated);
     },
-    init: function () {
-        let _try = document.getElementById("generate-pseudo").addEventListener("click", function (e) {
+    init: function() {
+        let _try = document.getElementById("generate-pseudo").addEventListener("click", function(e) {
             pseudo.generate();
         });
     }
