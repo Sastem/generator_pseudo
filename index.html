@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de pseudos débiles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="css/animated.css" />
+
+</head>
+
+<body>
+    <div class="truc-a-centrer">
+        <svg viewBox="0 0 1300 300">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="35%" class="webcoderskull">
+                    Bienvenue
+                </text>
+                <text text-anchor="middle" x="50%" y="68%" class="text--line" style="font-size: 126px ;">
+                    Génerateur de pseudo
+                </text>
+
+            </symbol>
+
+            <g class="g-ants">
+                <use xlink:href="#s-text" class="webcoderskull-1"></use>
+                <use xlink:href="#s-text" class="webcoderskull-1"></use>
+                <use xlink:href="#s-text" class="webcoderskull-1"></use>
+                <use xlink:href="#s-text" class="webcoderskull-1"></use>
+                <use xlink:href="#s-text" class="webcoderskull-1"></use>
+            </g>
+        </svg>
+    </div>
+    <!-- <h1 class="animated bounce">Bienvenue sur mon générateur de pseudo</h1> -->
+    <div class="generateur">
+        <p class="paragraph" id="p1">Cliquez sur le bouton pour voir votre pseudo</p>
+        <div>
+            <button id="generate-pseudo" class="btn btn-success">Générer</button>
+        </div>
+        <p class="paragraph" id="pseudo"></p>
+    </div>
+    <script src="javascript/generator.js"></script>
+</body>
+
+</html>
